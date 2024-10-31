@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwindconfig.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>submit</title>
+    <link sty>
+  </head>
+  <body class="overflow min-h-screen mb-4 " dir="rtl">
+    <div class="flex flex-col justify-center ">
+      <div class="flex flex-row-reverse mt-[25px] ml-[45px] ">
+        <button ><img src="assets/img/Group 33999.svg"></button>
+      </div>
+      <div class=" w-auto flex flex-col mt-[10px] lg:mr-[270px] md:mr-[250px] xl:mx-[137px] xl:pr-[300px] ">
+        <div class=" flex mt-[-27p] justify-center md:justify-start md:mr-[68px] lg:mr-[146px] xl:mr-[147px] ">
+          <img src="assets/img/logo-copy64.svg" class=" md:h-[100px] w-[122px] lg:w-[170px] xl:w-[202px]">
+        </div>
+        <div class="flex justify-center md:justify-start  lg:mr-[48px]  xl:mr-[63px]">
+          <img src="assets/img/Group 1.svg" class=" h-[65px] md:h-[80px] lg:h-[100px] xl:h-[120px]">
+        </div>
+        <div class="flex text-2xl mt-[20px] xl:mt-[46px] justify-center md:justify-start md:mr-[70px] lg:mt-[46px] lg:mr-[198px] xl:mr-[200px] font-semibold text-4xl text-h1">
+          <h1>ثبت نام</h1>
+        </div>
+        <div class="flex flex-col justify-center items-center md:items-start md:justify-start lg:mr-[-41px]">
+          <div class="flex flex-col mt-[24px] lg:flex-row  lg:mt-[57.03px] xl:mt-[57.03px]">
+            <div class="relative flex flex-col" >
+              <label for="name" class=" text-[#646060] font-semibold">نام </label>
+              <input placeholder=" احمد" type="text" id="name" class="w-full mt-[8px]  lg:w-[280px] lg:h-[48.47px] lg:mt-[6.87px] w-[280px] h-[48.47px] xl:mt-[6.87px] border-2 border-[#DDE4EC] rounded-[15px] focus:focus:ring-[#69BEC7] active:bg-[#efefef] ps-[40px]  ">
+              <div class="absolute " style="left: calc(235px + 14px); top: 72%; transform: translateY(-50%);"> 
+                <img src="assets/img/username.svg">
+              </div>
+            </div>
+            <div class="relative lg:mr-[21px] xl:mr-[21px] flex flex-col ">
+              <label for="family" class="text-[#646060] mt-[20px] lg:mt-[0px] font-semibold">نام خانوادگی</label>
+              <input placeholder="احمدی" type="text" id="family" class="mt-[8px]  lg:w-[280px] lg:h-[48.47px] lg:mt-[6.87px] w-[280px] h-[48.47px] xl:mt-[6.87px] border-2 border-[#DDE4EC] rounded-[15px] focus:focus:ring-[#69BEC7]  active:bg-[#efefef] ps-[40px]  ">
+              <div class="absolute " style="left: calc(235px + 14px); top: 72%; transform: translateY(-50%);">
+                <img src="assets/img/username.svg">
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col mt-[20px] lg:flex-row lg:mt-[57.03px] xl:mt-[32.37px]">
+            <div class="relative flex flex-col">
+              <label for="phonenumber" class="text-[#646060] font-semibold">شماره موبایل</label>
+              <input placeholder="۰۹۱۲۲۲۲۲۲۹۹" id="phonenumber" maxlength="11"  onkeypress="return isNumberKey(event)"  type="text" class="mt-[8px]  lg:w-[280px] lg:h-[48.47px] lg:mt-[6.87px] w-[280px] h-[48.47px] xl:mt-[6.87px] border-2 border-[#DDE4EC] rounded-[15px] focus:focus:ring-[#69BEC7] active:bg-[#efefef]  ps-[40px] ">
+              <div class="absolute " style="left: calc(235px + 14px); top: 72%; transform: translateY(-50%);">
+                <img src="assets/img/call.svg">
+              </div>
+            </div>
+            <div class=" relative lg:mr-[21px] xl:mr-[21px] flex flex-col">
+              <label for="mail" class="text-[#646060] mt-[20px] lg:mt-[0px] font-semibold">ایمیل</label>
+              <input placeholder="ahmadahmadi@gmail.com" id="mail" type="email" class="mt-[8px]  lg:w-[280px] lg:h-[48.47px] lg:mt-[6.87px]  w-[280px] h-[48.47px] xl:mt-[6.87px] border-2 border-[#DDE4EC] rounded-[15px] focus:focus:ring-[#69BEC7] active:bg-[#efefef] ps-[40px]">
+              <div class="absolute " style=" left:calc(235px + 14px); top: 74%; transform: translateY(-50%);">
+                <img src="assets/img/mail.svg">
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col mt-[20px] lg:flex-row lg:mt-[57.03px]  xl:mt-[32.37px]">
+            <div class="relative flex flex-col">
+              <label for="password" class="text-[#646060] font-semibold">رمز عبور</label>
+              <input  id="password" type="text" class="mt-[8px]  lg:w-[280px] lg:h-[48.47px] lg:mt-[6.87px] w-[280px] h-[48.47px] xl:mt-[6.87px] border-2 border-[#DE4EC] rounded-[15px] focus:focus:ring-[#69BEC7] active:bg-[#efefef] ps-[40px] ">
+              <div>
+                <button  id="btn-show-pass" class="absolute  z-40 "style=" left:calc(235px + 8px); top: 74%; transform: translateY(-50%);" ><img src="assets/img/pass.svg"></button>
+                <img id="img-hide-pass" src="assets/img/Vector 309.svg" class="absolute  z-70 hidden" style=" left:calc(235px + 8px); top: 74%; transform: translateY(-50%);">
+              </div>
+            </div>
+            <div class="relative lg:mr-[21px] xl:mr-[21px] flex flex-col">
+              <label for="repassword" class="text-[#646060] mt-[20px] lg:mt-[0px] font-semibold">تکرار رمز عبور</label>
+              <input  id="repassword" type="text" class="mt-[8px]  lg:w-[280px] lg:h-[48.47px] lg:mt-[6.87px]  w-[280px] h-[48.47px] xl:mt-[6.87px] border-2 border-[#DE4EC] rounded-[15px] focus:focus:ring-[#69BEC7] active:bg-[#efefef] ps-[40px] ">
+              <div class="" > 
+                <button id="btn-show-repass"  class="absolute  z-40 " style=" left:calc(235px + 8px); top: 74%; transform: translateY(-50%);"><img src="assets/img/pass.svg" ></button>
+                <img  id="img-hide-repass"  src="assets/img/Vector 309.svg" class="absolute  z-70 hidden" style=" left:calc(235px + 8px); top: 74%; transform: translateY(-50%);">
+              </div>
+            </div>
+          </div>
+          <div class="lg:mt-[37.27px] xl:mt-[37.27px] ">
+            <button id="btn" class=" mt-[20px] w-[280px]  lg:w-[581px] lg:h-[58.85px] lg:mt-[6.87px]  xl:w-[581px] h-[58.85px] xl:mt-[6.87px] border-2 border-[#DE4EC] rounded-[15px] font-extrabold bg-[#69BEC7] border-[#69BEC7] text-white hover:bg-[]">ثبت نام</button>
+          </div>
+        </div>     
+      </div>
+      <!-- <div dir="ltr" class=" hidden xl:block absolute w-full">
+          <img src="assets/img/dfghf.svg" class="  mt-[375px] z-30 flex">
+      </div> -->
+      <div id="toast" class=" hidden z-70 absolute top-[12%] right-[4%] md:top-[2%] md:right-[30%] lg:top-[2%] lg:right-[41%] xl:top-[2%] xl:right-[16%]  border-2  bg-opacity-70 rounded-[10px] font-semibold w-[400px] h-[60px] xl:w-[400px] xl:h-[60px] bg-[#E43D3D] text-[#8C676B] text-center flex flex-col justify-center text-[18px] xl:font-bold">
+        <p> رمز عبور و تکرار رمز عبور مطابقت ندارند</p>
+      </div>
+    </div> 
+   
+   <script src="assets/js/submit.js"></script>
+  </body>
+  
+</html>

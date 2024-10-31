@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwindconfig.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body dir="rtl" class=" mh-[1024px] bg-[#EBF6F8] dark:bg-gray-900  transition-colors duration-300">
+      <div class="flex flex-col xl:flex-row xl:p-3 justify-center mb-[35px]">
+        <!-- <div class="flex justify-between my-[10px] px-[7px] xl:hidden ">
+            <button onclick="sinaMenuDashboard()"  class="text-white mb-4 w-[35px] p-2 ml-[10px]  border-2 border-[#FFFFFF] ">
+                <img class="w-[30px]" src="assets/img/menu-symbol-of-three-parallel-lines-svgrepo-com.svg">
+            </button>
+            <div class="flex mb-[17px]  w-[35px]">
+                <button><img src="assets/img/Group 33999.svg"></button>
+            </div>
+        </div> -->
+        <div class="flex justify-between p-[17px] my-[10px]  xl:hidden ">
+          <button  onclick="sinaMenuDashboard()"  class="text-white mb-4 w-[35px] md:w-[40px] lg:w-[50px] p-2 border-2   border-[#69BEC7]">
+              <img class="w-[30px]" src="assets/img/menu-symbol-of-three-parallel-lines-svgrepo-com.svg">
+          </button>
+          <div class="flex mb-[17px] w-[35px] md:w-[40px] lg:w-[50px]">
+              <button><img src="assets/img/Group 33999.svg"></button>
+          </div>
+      </div>
+        <ul id="hospital-menu-mobile-dashboard" class="hidden  flex flex-col justify-around text-[15px] w-[97%] mr-[5px] z-50 absolute top-[53px] max-h-[400px] bg-[#FFFFFF] mb-[10px] ">
+            <li class="mt-[30px] mr-[12px] hover:bg-[#dcf0f36b]  "><button>داشبورد</button></li>
+            <li class="mt-[30px] mr-[12px] hover:bg-[#dcf0f36b] "><a href="./patients.html">بیماران</a></li>
+            <li class="mt-[30px] mr-[12px] hover:bg-[#dcf0f36b] "><button>اطلاعیه ها</button></li>
+            <li class="mt-[30px] mr-[12px] hover:bg-[#dcf0f36b] "><button>تنظیمات</button></li>
+            <li class="my-[30px] mr-[12px] hover:bg-[#dcf0f36b] "><button>خروج</button></li>
+            <li class=" h-[41px] w-[78px] rounded-[25px] bg-[#FFFFFF] flex flex-row justify-between my-[30px] mr-[12px] ">
+                <button class="disable-dark-mode-mobile" > <img src="assets/img/Vector (4).svg" class="w-[18px] hover:bg-[#dcf0f36b]"></button>
+                <button  class="enable-dark-mode-mobile" > <img src="assets/img/moon.svg" class="w-[18px]  hover:bg-[#dcf0f36b]"></button>
+            </li>
+        </ul>
+        <ul id="hospital-menu-xl" class="hidden xl:flex bg-[#69BEC7] xl:rounded-[50px] flex xl:flex-col xl:w-[116px] xl:max-h-[936px] xl:mt-[53px] ">
+          <li>  
+              <img src="assets/img/Ellipse 49.svg" class="  xl:w-[89px] xl:mt-[21px] xl:mr-[14px] xl:ml-[13px]">
+          </li>
+        
+          <li   class=" flex xl:flex-col xl:justify-center xl:items-center xl:w-[153px] xl:h-[150px] rounded-[100px] xl:bg-[#EBF6F8] xl:mr-[-22px] xl:mt-[17px] dark:bg-gray-900">
+              <img src="assets/img/logo-copy64.svg" class="xl:w-[108px] xl:mt-[38p]">
+              
+          </li>
+          <li class="item-menu xl:mt-[20px] xl:mb-[55px]">  <a  href="#" class="xl:w-[64px] xl:h-[30px] xl:mt-[35px] xl:mr-[25px] xl:ml-[28px] font-black text-white xl:text-[20px]">داشبورد</a>
+              <img src="assets/img/Group 34029.svg" class="icon hidden absolute right-[4px] top-[380px]">
+          </li>
+          <li class="item-menu">
+                  <a href="./patients.html" class="xl:w-[51px] xl:h-[28px] xl:mt-[52px] xl:mr-[24px] xl:ml-[41px] font-black text-white xl:text-[18px]">بیماران</a>
+                  <img src="assets/img/Group 34029.svg" class="icon hidden absolute right-[4px] top-[463px]">
+          </li>
+          <li class="item-menu">
+              <button class="xl:w-[77px] xl:h-[27px] xl:mt-[55px] xl:mr-[24px] font-black text-white xl:text-[18px]">اطلاعیه
+              ها</button>
+              <img src="assets/img/Group 34029.svg" class=" icon hidden absolute right-[4px] top-[545px]">
+          </li>
+          <li class="item-menu">
+              <button class="xl:w-[63px] xl:h-[28px] xl:mt-[55px] xl:mr-[24px] xl:ml-[29px] font-black text-white xl:text-[18px]">تنظیمات</button>
+              <img src="assets/img/Group 34029.svg" class=" icon hidden absolute right-[4px] top-[630px]">
+          </li>
+          <li class="item-menu">
+              <button class="xl:w-[41px] xl:h-[28px] xl:mt-[158px] xl:mr-[30px] xl:ml-[45px] font-black text-white xl:[18px]">خروج</button>
+              <img src="assets/img/Group 34029.svg" class=" icon hidden absolute right-[4px] top-[818px]">
+          </li>
+          <li class=" xl:h-[41px] xl:w-[78px] xl:mt-[52px] xl:ml-[14px] xl:mr-[15px] xl:rounded-[25px] xl:bg-[#FFFFFF] xl:flex xl:flex-row xl:justify-between">
+             
+              <button class="disable-dark-mode" > <img src="assets/img/Vector (4).svg" class=" xl:mr-[8px]  rounded-[10px] hover:bg-gray-500 transition-transform  hover:scale-110  "></button>
+              <button  class="enable-dark-mode" > <img src="assets/img/moon.svg" class="xl:ml-[8px] rounded-[10px] hover:bg-gray-300 transition-transform  hover:scale-110"></button>
+              
+          </li>
+      </ul>
+        <div class="xl:w-auto px-[10px] ">
+          <div class="">
+            <div class="flex hidden  xl:flex xl:flex-row-reverse xl:mt-[27px] "> 
+              <button><img src="assets/img/Group 33999.svg"></button>
+            </div>
+            <div class=" w-full flex flex-row justify-between text-[#4F4F4F] xl:mt-[30px] ">
+              <div class="flex flex-row gap-[2px] md:gap-4 items-center dark:text-white">
+                  <p class="  xl:mt-[px] xl:mr-[62px]  text-[15px] md:text-[20px] font-bold  ">دکتر ناصر مقدسی</p>
+              <div class="relative inline-block z-40 w-[30px] md:w-[43px] lg:w-[70px] ">
+                  <div id="badge" class="absolute top-0 right-0 w-8 h-10 rounded-full border-white">
+                      <span id="notification-count" class="absolute -top-2 -right-2 bg-[#BEE6EA] text-black text-[15px] rounded-full w-6 h-6 flex items-center justify-center">۳</span>
+                  </div>
+                  <img id="dropdownButton" src="assets/img/Group 34077.svg" alt="messages" class="w-10 lg:w-[50px]  cursor-pointer">
+                  <div id="dropdownContent" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg  overflow-y-auto max-h-[300px] w-[250px] ">
+                      <ul class="p-2">
+                          <li class="border-b p-2 flex flex-col">
+                            <div class="flex flex-row mb-[20px]">
+                              <img src="assets/img/Ellipse 49.svg" class="w-[30px] ">
+                              <span class="mr-[10px]">احمد احمدی</span>
+                            </div>
+                            <div> 
+                              <p  class="text-[12px]"> سلام من احمد احمدی هستم </p>
+                            </div>
+                          </li>
+                          <li class="border-b p-2 flex flex-col">
+                            <div class="flex flex-row mb-[20px]">
+                              <img src="assets/img/Ellipse 49.svg" class="w-[30px] ">
+                              <span class="mr-[10px]">احمد احمدی</span>
+                            </div>
+                            <div>
+                              <p  class="text-[12px]"> سلام من احمد احمدی هستم </p>
+                            </div>
+                          </li> <li class="border-b p-2 flex flex-col">
+                            <div class="flex flex-row  mb-[20px]">
+                              <img src="assets/img/Ellipse 49.svg" class="w-[30px] ">
+                              <span class="mr-[10px]">احمد احمدی</span>
+                            </div>
+                            <div>
+                              <p  class="text-[12px]"> سلام من احمد احمدی هستم </p>
+                            </div>
+                          </li> <li class="border-b p-2 flex flex-col">
+                            <div class="flex flex-row mb-[20px]">
+                              <img src="assets/img/Ellipse 49.svg" class="w-[30px]">
+                              <span class="mr-[10px]">احمد احمدی</span>
+                            </div>
+                            <div>
+                              <p  class="text-[12px]"> سلام من احمد احمدی هستم </p>
+                            </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              </div>
+              <div class="flex flex-row gap-[2px] md:gap-4 items-center ">
+                  <p class="  font-bold  text-[15px] md:text-[20px] xl:font-bold dark:text-white ">شماره نظام پزشکی:</p>
+                  <div  class=" bg-[#FFFFFF] rounded-[12px] w-[61px] h-[25px] md:h-[45px]  xl:mr-[52px] flex justify-center  md:w-[85px] lg:w-[108px] xl:h-[42px]">
+                      <p class=" text-[15px] font-bold md:text-[25px] xl:font-medium dark:text-black">۹۷۰۴۰</p>
+                  </div>
+              </div>
+          </div>
+          <hr class="w-[95%] mt-[50px] ms-auto block lg:hidden">
+          <div class=" w-full flex flex-col mx-[2px]  xl:w-[1151px] xl:mt-[30.21px] lg:h-[818px] xl:mr-[68px]">
+            <div class=" flex flex-col-reverse  lg:gap-[10px] xl:gap-[0px] lg:justify-around mt-[13px] lg:flex-row "> 
+              <div class="my-[50px] md:hidden lg:flex lg:my-[0px] rounded-[12px] p-2  bg-[#FFFFFF] xl:rounded-[20px] flex flex-col justify-center items-center lg:w-[253px] w-full xl:h-[248px] xl:pt-[17px] xl:pr-[41px] xl:pl-[42px] xl:pb-[14px] text-[22px]  xl:text-[20px] font-semibold text-[#4F4F4F] drop-shadow-sm hover:drop-shadow-md">
+               <p class="text-center mb-4">بیماران جدید</p>
+               <hr class="lg:hidden flex border-b-2 border-[#cfe1e1] w-[75%] md:w-[60%] ">
+                <!-- <div class="xl:w-[121px] xl:h-[121px]"></div> -->
+                <div class="lg:mt-[8px]  relative flex justify-center items-center w-[180px] ">
+                  <canvas id="myChart1"></canvas>
+                  <div id="percentageLabel1" class="absolute top-[97px] text-2xl font-bold text-gray-700 dark:text-white"></div>
+                </div>
+              </div>
+              <div class=" w-full  ">
+                <p class="flex lg:hidden mt-[80px] p-2 justify-between font-medium text-[21px]">ویزیت های پیش رو</p>
+                <div id="cards-dashboard" class="grid grid-cols-[repeat(auto-fit,minmax(340px,1fr))] justify-items-center w-full rounded-[12px] bg-white max-h-[500px] mb-[20px] mt-[20px] font-medium text-[17px] block lg:hidden overflow-y-auto">
+                </div>
+                <div class="hidden lg:flex bg-[#FFFFFF] w-full p-2 md:w-[700px] lg:w-full xl:rounded-[20px] xl:w-[869px] xl:h-[248px] xl:mr-[29px] drop-shadow-sm hover:drop-shadow-md xl:px-[22px] xl:pt-[16px] xl:pb-[11px] ">
+                  <table id="tabel-dashboard" class="table-auto w-full">
+                    <caption class="caption-top text-[10px] xl:mb-[17px] xl:mr-[8px] xl:text-[20px] xl:font-semibold text-[#4F4F4F] text-start">
+                      ویزیت های پیش رو
+                    </caption>
+                    <thead class="w-[400px] text-[13px] xl:w-[825px] xl:h-[57px] bg-[#69BEC7] text-white xl:text-[25px] font-medium mt-[7px]">
+                      <tr>
+                        <th class="xl:rounded-s-xl ">نام بیمار</th>
+                        <th>شماره نوبت</th>
+                        <th>علت مراجعه</th>
+                        <th>ساعت پذیرش</th>
+                        <th class="xl:rounded-e-xl ">تاریخ پذیرش</th>
+                      </tr>
+                    </thead>
+                    <tbody class="text-[10px] xl:text-[20px] font-medium text-[#646060] text-center divide-y divid-[#B0B0B0]">
+                      <tr class="">
+                        <td class="pb-[8px] pt-[7px]">کاظم</td>
+                        <td class="">178</td>
+                        <td class="">تصادف</td>
+                        <td class="">۱۴ : ۱۷</td>
+                        <td class="">۱۴۰۲/۰۴/۲۴</td>
+                      </tr>
+                      <tr class="">
+                        <td class=" pb-[7px] pt-[4.5px]">باقر</td>
+                        <td class="">۱۷۹</td> 
+                        <td class="">تصادف</td>
+                        <td class="">۱۴ : ۳۰</td>
+                        <td class="">۱۴۰۲/۰۴/۲۴</td>
+                      </tr>
+                      <tr class="">
+                        <td class="pt-[4px]">صادق</td>
+                        <td>178</td>
+                        <td>تصادف</td>
+                        <td>۱۴ : ۱۷</td>
+                        <td>۱۴۰۲/۰۴/۲۴</td>
+                      </tr>
+                      <tr class=" lg:hidden  block">
+                        <td class="pt-[4px]">صادق</td>
+                        <td>178</td>
+                        <td>تصادف</td>
+                        <td>۱۴ : ۱۷</td>
+                        <td>۱۴۰۲/۰۴/۲۴</td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- <div class="  ghhfghgfhgfhgfhgfhg bg-[#FFFFFF] w-full p-2 md:w-[700px]  xl:rounded-[20px] xl:w-[869px] xl:h-[248px] xl:mr-[29px] drop-shadow-sm hover:drop-shadow-md xl:px-[22px] xl:pt-[16px] xl:pb-[11px] ">
+                <table id="tabel-dashboard" class="table-auto w-full">
+                  <caption class="caption-top text-[10px] xl:mb-[17px] xl:mr-[8px] xl:text-[20px] xl:font-semibold text-[#4F4F4F] text-start">
+                    ویزیت های پیش رو
+                  </caption>
+                  <thead class="w-[400px] text-[13px] xl:w-[825px] xl:h-[57px] bg-[#69BEC7] text-white xl:text-[25px] font-medium mt-[7px]">
+                    <tr>
+                      <th class="xl:rounded-s-xl ">نام بیمار</th>
+                      <th>شماره نوبت</th>
+                      <th>علت مراجعه</th>
+                      <th>ساعت پذیرش</th>
+                      <th class="xl:rounded-e-xl ">تاریخ پذیرش</th>
+                    </tr>
+                  </thead>
+                  <tbody class="text-[10px] xl:text-[20px] font-medium text-[#646060] text-center divide-y divid-[#B0B0B0]">
+                    <tr class="">
+                      <td class="pb-[8px] pt-[7px]">کاظم</td>
+                      <td class="">178</td>
+                      <td class="">تصادف</td>
+                      <td class="">۱۴ : ۱۷</td>
+                      <td class="">۱۴۰۲/۰۴/۲۴</td>
+                    </tr>
+                    <tr class="">
+                      <td class=" pb-[7px] pt-[4.5px]">باقر</td>
+                      <td class="">۱۷۹</td> 
+                      <td class="">تصادف</td>
+                      <td class="">۱۴ : ۳۰</td>
+                      <td class="">۱۴۰۲/۰۴/۲۴</td>
+                    </tr>
+                    <tr class="">
+                      <td class="pt-[4px]">صادق</td>
+                      <td>178</td>
+                      <td>تصادف</td>
+                      <td>۱۴ : ۱۷</td>
+                      <td>۱۴۰۲/۰۴/۲۴</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> -->
+            </div>
+            <div class=" w-full flex flex-col-reverse  lg:flex-row">
+              <div class=" my-[40px]  md:hidden lg:flex lg:my-[0px] rounded-[12px] p-2 bg-[#FFFFFF] xl:rounded-[20px] flex flex-col justify-center items-center xl:w-[253px] xl:h-[248px] lg:mt-[34px] xl:pt-[16px] xl:pr-[30px] xl:pl-[38px] xl:pb-[14px] text-[22px] xl:text-[20px] font-semibold text-[#4F4F4F] drop-shadow-sm hover:drop-shadow-md">
+                <p class="text-center mb-4">همه بیماران</p>
+                <hr class="lg:hidden flex border-b-2 border-[#cfe1e1] w-[75%] md:w-[60%] ">
+                <div class="chart-container relative   flex justify-center items-center w-[180px] ">
+                  <canvas id="myChart2"></canvas>
+                  <div id="percentageLabel" class="absolute top-[104px] text-2xl font-bold text-gray-700 dark:text-white"></div>
+                </div>
+              </div>
+              <!-- lg-charts------ -->
+              <div class="w-full flex  xl:flex-row  justify-center items-center pt-[10px]  xl:flex bg-[#FFFFFF] xl:rounded-[20px]  xl:w-[869px] xl:h-[248px] xl:mr-[29px] lg:mt-[34px] drop-shadow-sm hover:drop-shadow-md">
+                <div class="xl:text-[20px] text-[18px] md:text-[15px] font-semibold text-[#4F4F4F] lg:pt-[35px] ">
+                  <table class="xl:w-[200px] xl:h-full border-separate border-spacing-x-[27px] border-spacing-y-[16px] xl:pt-[6px] xl:pr-[30px] pt-[20px] pb-[46px]">
+                    <caption>بیماران ویزیت شده</caption>
+                    <tbody class=" text-center">
+                      <tr class="">
+                        <th class="text-[18px] font-medium ">امروز</th>
+                        <td class="bg-[#EBF6F8] text-[18px] font-medium ">18</td>
+                      </tr>
+                      <tr class="">
+                        <th class=" text-[18px] font-medium ">هفتگی</th>
+                        <td class="bg-[#EBF6F8] text-[18px] font-medium  ">30</td>
+                      </tr>
+                      <tr class="">
+                        <th class=" text-[18px] font-medium ">ماهانه</th>
+                        <td class="bg-[#EBF6F8] text-[18px] font-medium ">960</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class=" p-[20px] lg:mr-[60px] hidden md:block ">
+                    <canvas id="myLineChart" class="w-[351px] "></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- lg-charts---- -->
+            <div class="">
+              <div  dir="rtl" class=" rounded-[12px] lg:flex bg-[#ffff] w-full  flex mt-[21px] flex  xl:rounded-[20px] xl:mt-[30px] xl:w-[1151px] xl:h-[248px] drop-shadow-sm hover:drop-shadow-md xl:pr-[35px] xl:pt-[14px] xl:pb-[10px] p-2 ">
+                <table class="w-full table-auto ">
+                  <thead class=" text-[20px] xl:font-bold xl:text-[25px] text-[#4F4F4F]  xl:mb-[7px]">
+                    <tr>
+                      <th class="text-center pt-[30px]  lg:pt-[0px] lg:text-start">لیست اطلاعیه ها</th>
+                    </tr>
+                  </thead>
+                  <tbody dir="ltr" class="font-medium gap-4 ml-[30px] md:ml-[0px] mt-8 lg:mt-[0px] h-[400px] text-[20px] xl:text-[24px] xl:h-[170px] text-[#646060] divide-y-2 divid-[#B0B0B0] flex flex-col xl:items-end overflow-y-auto items-center "  >
+                    <tr class="flex">
+                      <td class="lg:pt-[7px] lg:pb-[12px] flex items-center ">
+                        <p class=" font-vazir xl:mr-[16px] p-2  ">تزریق واکسن کرونابه بیماران مبتلا به ام اس در بیمارستان سینا</p>
+                        <div class="hidden lg:flex w-[14px] h-[14px] rounded-full bg-[#69BEC7] xl:mr-[34px]"></div>
+                      </td>
+                    </tr >
+                    <tr class="flex ">
+                      <td class="xl:pt-[13px] xl:pb-[15px] flex xl:items-center  ">
+                        <p class=" xl:mr-[16px] font-vazir p-2">ارائه برنامه کاربردی برای خودمدیریتی بیماران مبتلا به مالتیپل اسکلروزیس</p>
+                        <div class="hidden lg:flex  w-[14px] h-[14px] rounded-full bg-[#69BEC7] xl:mr-[34px]"></div>
+                      </td>
+                    </tr>
+                    <tr class="flex">
+                      <td class="xl:pt-[13px] xl:pb-[15px] flex xl:items-center ">
+                        <p class=" xl:mr-[16px] font-vazir p-2">ارائه برنامه کاربردی برای خودمدیریتی بیماران مبتلا به مالتیپل اسکلروزیس</p>
+                        <div class="hidden lg:flex  w-[14px] h-[14px] rounded-full bg-[#69BEC7] xl:mr-[24px]"></div>
+                      </td>
+                    </tr>
+                    <tr class="flex">
+                      <td class="xl:pt-[13px] xl:pb-[15px] flex xl:items-center ">
+                        <p class=" xl:mr-[16px] font-vazir p-2">ارائه برنامه کاربردی برای خودمدیریتی بیماران مبتلا به مالتیپل اسکلروزیس</p>
+                        <div class="hidden lg:flex w-[14px] h-[14px] rounded-full bg-[#69BEC7] xl:mr-[24px]"></div>
+                      </td>
+                    </tr>
+                    <tr class="flex">
+                      <td class="xl:pt-[13px] xl:pb-[15px] flex xl:items-center ">
+                        <p class=" xl:mr-[16px] font-vazir p-2">ارائه برنامه کاربردی  برای خودمدیریتی بیماران مبتلا به مالتیپل اسکلروزیس</p>
+                        <div class="hidden lg:flex  w-[14px] h-[14px] rounded-full bg-[#69BEC7] xl:mr-[34px]"></div>
+                      </td>
+                    </tr>
+                    <tr class="flex">
+                      <td class="xl:pt-[13px] xl:pb-[15px] flex xl:items-center ">
+                        <p class=" xl:mr-[16px] font-vazir p-2">ارائه برنامه کاربردی برای خودمدیریتی بیماران مبتلا به مالتیپل اسکلروزیس</p>
+                        <div class="hidden lg:flex  w-[14px] h-[14px] rounded-full bg-[#69BEC7] xl:mr-[24px]"></div>
+                      </td>
+                    </tr>
+                    <tr class="flex">
+                      <td class="xl:pt-[13px] xl:pb-[15px] flex xl:items-center ">
+                        <p class=" xl:mr-[16px] font-vazir p-2">ارائه برنامه کاربردی  برای خودمدیریتی بیماران مبتلا به مالتیپل اسکلروزیس</p>
+                        <div class="hidden lg:flex w-[14px] h-[14px] rounded-full bg-[#69BEC7] xl:mr-[24px]"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            
+            </div>
+            <div class="lg my-5 w-full hidden md:flex flex-row justify-center gap-8 lg:hidden rounded-[15px] bg-white ">
+              <div class=" p-8 bg-[#FFFFFF]  flex flex-col justify-center items-center text-[22px] font-semibold text-[#4F4F4F] drop-shadow-sm hover:drop-shadow-md">
+                <p class="text-center mb-4">همه بیماران</p>
+                <hr class="lg:hidden flex border-b-2 border-[#cfe1e1] w-[75%] md:w-[60%] ">
+                <div class="chart-container relative  lg:w-full flex justify-center items-center w-[220px]">
+                  <canvas id="myChart5"></canvas>
+                  <div id="percentageLabel5" class="absolute top-[124px] text-2xl font-bold text-gray-700 dark:text-white"></div>
+                </div>
+              </div>
+              <div class=" p-8 bg-[#FFFFFF]  flex flex-col justify-center items-center text-[22px]  font-semibold text-[#4F4F4F] drop-shadow-sm hover:drop-shadow-md">
+                <p class="text-center mb-4">بیماران جدید</p>
+                <hr class="lg:hidden flex border-b-2 border-[#cfe1e1] w-[75%] md:w-[60%] ">
+                 <div class="lg:mt-[8px] lg:w-full relative flex justify-center items-center w-[220px]">
+                   <canvas id="myChart4"></canvas>
+                   <div id="percentageLabel4" class="absolute top-[123px] text-2xl font-bold text-gray-700 dark:text-white"></div>
+               </div>
+            </div>
+
+            
+          </div>
+        </div>
+              
+      </div>
+    <script src="assets/js/menu.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="assets/js/tables.js"></script>
+    <script src="assets/js/charts.js"></script>
+    <script src="assets/js/alert.js"></script>
+    <script src="assets/js/darkmode.js"> </script>
+  </body>
+</html>
