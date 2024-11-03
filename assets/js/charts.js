@@ -97,12 +97,10 @@ new Chart(ctx, {
 
 //  LineChart
 
-//  
+
 const canvasline = document.getElementById('myLineChart');
 
-// تنظیم عرض و ارتفاع canvas
-canvasline.width = 570;  
-canvasline.height = 230;
+
 
 const ctx3 = canvasline.getContext('2d');
 const myLineChart = new Chart(ctx3, {
@@ -124,7 +122,8 @@ const myLineChart = new Chart(ctx3, {
         }]
     },
     options: {
-        responsive: false,
+        responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 display: false,
@@ -145,9 +144,9 @@ const myLineChart = new Chart(ctx3, {
                 },
                 ticks: {
                     font: {
-                        size: 14, // اندازه متن برچسب محور y
-                        family: 'Arial', // نوع فونت (اختیاری)
-                        weight: 'bold' // ضخامت متن (اختیاری)
+                        size: 14, 
+                        family: 'Arial', 
+                        weight: 'bold' 
                     }
                 }
             },
@@ -157,9 +156,9 @@ const myLineChart = new Chart(ctx3, {
                 },
                 ticks: {
                     font: {
-                        size: 14, // اندازه متن برچسب محور x
-                        family: 'Arial', // نوع فونت (اختیاری)
-                        weight: 'bold' // ضخامت متن (اختیاری)
+                        size: 14, 
+                        family: 'Arial', 
+                        weight: 'bold' 
                     }
                 }
             },
@@ -177,12 +176,12 @@ const myLineChart = new Chart(ctx3, {
 
 const ctx5 = document.getElementById('myChart5').getContext('2d');
 
-const visitedData5 = 50; // تعداد ویزیت شده
-const notVisitedData5 = 10; // تعداد ویزیت نشده
-const totalData5 = visitedData + notVisitedData; // مجموع داده‌ها
-const percentage5 = Math.round((visitedData / totalData) * 100); // محاسبه درصد
+const visitedData5 = 50; 
+const notVisitedData5 = 10; 
+const totalData5 = visitedData + notVisitedData; 
+const percentage5 = Math.round((visitedData / totalData) * 100);
 
-// نمایش درصد در مرکز چارت
+
 document.getElementById('percentageLabel5').innerText = `${percentage}%`;
 
 new Chart(ctx5, {
@@ -196,19 +195,19 @@ new Chart(ctx5, {
         }]
     },
     options: {
-        responsive: true, // اطمینان از واکنش‌گرایی چارت
-        cutout: '50%', // فضای مرکزی چارت را خالی می‌کند
+        responsive: true, 
+        cutout: '50%', 
         plugins: {
             tooltip: {
                 enabled: true
             },
-            // تنظیمات برچسب‌ها
+           
             legend: {
                 labels: {
                     font: {
-                        size: 16, // اندازه متن برچسب
-                        family: 'Arial', // نوع فونت (اختیاری)
-                        weight: 'bold' // ضخامت متن (اختیاری)
+                        size: 16, 
+                        family: 'Arial', 
+                        weight: 'bold' 
                     }
                 }
             }
