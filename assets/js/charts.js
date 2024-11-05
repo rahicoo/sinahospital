@@ -19,6 +19,10 @@ new Chart(ctx, {
             data: [visitedData, notVisitedData],
             backgroundColor: ["#69BEC7", '#E0E0E0'],
             borderWidth: 10,
+            borderColor: [
+                '#69BEC7', 
+                '#ffffff'  
+            ],
         }]
     },
     options: {
@@ -73,6 +77,10 @@ new Chart(ctx, {
               data: [visitedData, notVisitedData],
               backgroundColor: ["#69BEC7", '#E0E0E0'],
               borderWidth: 10,
+              borderColor: [
+                '#69BEC7', 
+                '#ffffff'  
+            ],
           }]
       },
       options: {
@@ -197,6 +205,12 @@ new Chart(ctx5, {
             data: [visitedData, notVisitedData],
             backgroundColor: ["#69BEC7", '#E0E0E0'],
             borderWidth: 10,
+            borderColor: [
+                '#69BEC7', 
+                '#ffffff'  
+            ],
+            
+
         }]
     },
     options: {
@@ -246,6 +260,10 @@ new Chart(ctx5, {
               data: [visitedData, notVisitedData],
               backgroundColor: ["#69BEC7", '#E0E0E0'],
               borderWidth: 10,
+              borderColor: [
+                '#69BEC7', 
+                '#ffffff'  
+            ],
           }]
       },
       options: {
@@ -254,6 +272,7 @@ new Chart(ctx5, {
           plugins: {
               tooltip: {
                   enabled: true
+                  
               },
               legend: {
                 labels: {
@@ -261,7 +280,7 @@ new Chart(ctx5, {
                         size: 16, 
                         family: 'Arial', 
                         weight: 'bold' 
-                    }
+                    },
                 }
               }
           },
