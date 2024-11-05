@@ -23,7 +23,7 @@ new Chart(ctx, {
     },
     options: {
         responsive: true, 
-        cutout: '50%',
+        cutout: '60%',
         plugins: {
             tooltip: {
                 enabled: true
@@ -52,6 +52,11 @@ new Chart(ctx, {
 
 
 
+
+
+
+
+
   const ctx2 = document.getElementById('myChart2').getContext('2d');
   const visitedData2 = 12;
   const notVisitedData2 = 19;
@@ -72,7 +77,7 @@ new Chart(ctx, {
       },
       options: {
           responsive: true,
-          cutout: '50%', 
+          cutout: '60%', 
           plugins: {
               tooltip: {
                   enabled: true
@@ -196,7 +201,7 @@ new Chart(ctx5, {
     },
     options: {
         responsive: true, 
-        cutout: '50%', 
+        cutout: '60%', 
         plugins: {
             tooltip: {
                 enabled: true
@@ -245,7 +250,7 @@ new Chart(ctx5, {
       },
       options: {
           responsive: true,
-          cutout: '50%', 
+          cutout: '60%', 
           plugins: {
               tooltip: {
                   enabled: true
