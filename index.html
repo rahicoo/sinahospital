@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sina hospital</title>
+  <meta name="viewport" content="صفحه ی ورودی سایت بیمارستان سینا, initial-scale=1.0">
+  <title>صفحه ی ثبت نام-بیمارستان سینا</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="src">
   <script>
@@ -26,14 +26,14 @@
   <div class=" w-full h-full relative flex-col bg-color2 content-center p-[10px]">
     <div class="w-auto lg:w-full flex flex-col lg:flex-row  p-2 xl:mb-[44px]">
       <div class=" justify-between flex flex-row mb-[10px] lg:hidden p-[10px] w-full ">
-        <button id="btn-menu-mobile" onclick="sinalogin()"  class="w-[33px]"><img src="assets/img/menu-symbol-of-three-parallel-lines-svgrepo-com.svg"></button>
+        <button id="btn-menu-mobile" onclick="sinalogin()"  class="w-[33px]"><img src="assets/img/menu-symbol-of-three-parallel-lines-svgrepo-com.svg" alt="منوی موبایل" ></button>
         <img src="assets/img/logo-copy64-1.svg" class="w-[70px] ">
       </div>
       <ul id="menu-mobile" class="hidden absolute inset-x-0.5 top-[72px] w-[99%] h-[500px] border-1 border-[#69BEC7] flex flex-col  items-stretch rounded-[8px] p-2  bg-white rounded-lg text-[#4E5151] font-bold text-[20px] ">
         <li class=" my-[20px] w-full flex flex-row justify-center items-center  md:gap-[10px] p-2">
           <input type="text" id="search" placeholder="جستجو"class=" hidden rounded-[8px] border-2 border-[#0694A2]  md:w-[280px]  h-[36px] px-4  ">
           <button id="search-btn" class=" p-1  transition-transform focus:scale-150 ">
-            <img src="assets/img/Vector.svg" class="bg-[#b6caca] p-[3px] rounded-[10px] p-[13px] w-[33px] ">
+            <img src="assets/img/Vector.svg" alt="جستجو"  class="bg-[#b6caca] p-[3px] rounded-[10px] p-[13px] w-[33px] ">
           </button>
         </li> 
         <li class="p-2 h-[50px] mr-[50px]">صفحه اصلی</li>
@@ -49,8 +49,8 @@
       </ul>
       <div class="flex flex-row w-full xl:gap-[65px] ">
         <div class="flex flex-row w-[36%] p-2 ">
-          <img src="assets/img/logo-copy64.svg" class="lg:w-[60px] xl:w-[91px] hidden lg:flex">
-          <img src="assets/img/Group 1.svg" class=" hidden lg:flex w-[180px] xl:w-[259px]  ">
+          <img src="assets/img/logo-copy64.svg" alt="لوگوی بیمارستان"  class="lg:w-[60px] xl:w-[91px] hidden lg:flex">
+          <img src="assets/img/Group 1.svg" alt="لوگوی متنی بیمارستان"  class=" hidden lg:flex w-[180px] xl:w-[259px]  ">
         </div>
         <div class=" w-full flex xl:flex-row lg:gap-[11px] xl:gap-[20px] items-center w-[64%] ">
           <ul class=" w-[70%] lg:flex-row lg:gap-[10px] xl:gap-[17px]  p-2 hidden lg:flex">
@@ -64,7 +64,7 @@
           <div class="w-[30%] flex flex-row gap-2 items-center  lg:p-2 hidden lg:flex">
             <input type="text" id="search2" placeholder="جستجو"class="rounded-[8px] border-2 border-[#0694A2] lg:w-[160px] lg:h-[30px]  xl:w-[190px] xl:h-[36px] px-4 ">
             <button class=" lg:w-full ">
-              <img src="assets/img/Vector.svg" class="bg-color1 p-[4px] lg:w-[27px] xl:w-[33px] rounded-[8px]  ">
+              <img src="assets/img/Vector.svg" alt="جستجو"  class="bg-color1 p-[4px] lg:w-[27px] xl:w-[33px] rounded-[8px]  ">
             </button>
           </div>
         </div>
@@ -73,6 +73,7 @@
     <div class="flex flex-col-reverse lg:flex-row justify-center  w-full p-2 lg:mt-[130px] xl:mt-[90px]   "> 
       <div class="flex flex-col xl:p-2 ">
         <div class="font-bold text-[24px] md:text-[30px] xl:text-[40px] p-2 text-center">
+          <h1>
             <p>
               به وبسایت مرکز تحقیقات ام اس
             </p>
@@ -82,6 +83,8 @@
             <p>
               خوش آمدید.
             </p>
+          </h1>
+            
         </div>
         <div class="flex flex-col hidden lg:flex items-center lg:flex-row p-2">
             <div>
@@ -96,146 +99,146 @@
         </div>
         </div>
         <div class="flex justify-center hidden lg:flex">
-          <img src="assets/img/Group 3.svg" class=" lg:w-[400px] xl:w-[505px] xl:inline-block p-2 flex  ">
+          <img src="assets/img/Group 3.svg" alt="تصویر ورودی سایت"  class=" lg:w-[400px] xl:w-[505px] xl:inline-block p-2 flex  ">
         </div>
       </div> 
       <div class="lg:hidden flex-col bg-[#b7c7c780] bg-opacity-50 rounded-lg w-full h-[850px] items-center p-[5px] shadow-xl mt-12">
-        <p class="font-bold p-4 mt-[10px] text-[20px] md:text-[23px] flex justify-center lg:hidden text-center text-[#5e6769] ">بخش های بیمارستان</p>
+        <h2 class="font-bold p-4 mt-[10px] text-[20px] md:text-[23px] flex justify-center lg:hidden text-center text-[#5e6769] ">بخش های بیمارستان</h2>
         <div class="flex  flex-col w-full max-h-[700px] mt-[15px] items-center p-[5px] overflow-y-auto">
           <div class="flex flex-col md:flex-row w-full justify-center items-center ">
             <div class="w-[270px]  h-[230px] bg-[#f3fafa] p-2  rounded-lg shadow-lg m-4 transition-transform  hover:scale-110">
               <h3 class="mb-[10px] mt-[10px] text-[#5e6769] "></h3> اتاق نگاه کردن</h3>
               <hr class="border-b-2 border-[#cfe1e1] w-[46%]">
-              <img class="mt-[25px] " src="assets/img/doctor-hospital-room-looking-camera.jpg">
+              <img class="mt-[25px] " src="assets/img/doctor-hospital-room-looking-camera.jpg" alt="اتاق نگاه کردن" >
             </div>
             <div class="w-[270px] h-[230px] bg-[#f3fafa]  p-2 rounded-lg shadow-lg m-4  transition-transform  hover:scale-110">  
-               <h3 class="mb-[10px] mt-[10px] text-[#5e6769] "></h3> اعصاب و روان</h3>
+               <h3 class="mb-[10px] mt-[10px] text-[#5e6769] " ></h3> اعصاب و روان</h3>
                <hr class="border-b-2 border-[#cfe1e1] w-[48%]">
-              <img class="mt-[25px]" src="assets/img/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools.jpg"></div>
+              <img class="mt-[25px]" alt="بخش اعصاب و روان"  src="assets/img/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools.jpg"></div>
           </div>
           <div class="flex flex-col md:flex-row w-full justify-center items-center ">
             <div class="w-[270px] h-[230px] bg-[#f3fafa]  p-2 rounded-lg shadow-lg m-4 transition-transform  hover:scale-110">
               <h3 class="mb-[10px] mt-[10px] text-[#5e6769]"></h3> نظارت بر بازیابی</h3>
               <hr class="border-b-2 border-[#cfe1e1] w-[53%]">
-              <img class="mt-[25px]" src="assets/img/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools.jpg"></div>
+              <img class="mt-[25px]" alt="نظارت بر بازیابی"  src="assets/img/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools.jpg"></div>
             <div class="w-[270px] h-[230px] bg-[#f3fafa]  p-2 rounded-lg shadow-lg m-4 transition-transform  hover:scale-110">
               <h3 class="mb-[10px] mt-[10px] text-[#5efocus:outline-none6769]"></h3> راهرو</h3>
               <hr class="border-b-2 border-[#cfe1e1] w-[27%]">
-              <img class="mt-[25px]" src="assets/img/hospital-hallway-with-motion-effect.jpg"></div>
+              <img class="mt-[25px]" alt="راهرو بیمارستان سینا"  src="assets/img/hospital-hallway-with-motion-effect.jpg"></div>
           </div>
           <div class="flex flex-col md:flex-row w-full justify-center items-center ">
             <div class="w-[270px] h-[230px] bg-[#f3fafa]  p-2 rounded-lg shadow-lg m-4 transition-transform  hover:scale-110">
               <h3 class="mb-[10px] mt-[10px] text-[#5e6769]"></h3> محوطه</h3>
               <hr class="border-b-2 border-[#cfe1e1] w-[30%]">
-              <img class="mt-[25px]" src="assets/img/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools.jpg"></div>
+              <img class="mt-[25px]" alt="محیط باز بیمارستان سینا"  src="assets/img/empty-hospital-ward-with-heart-rate-monitor-bed-healthcare-recovery-nobody-emergency-room-with-medical-equipment-intensive-care-patient-reanimation-room-with-tools.jpg"></div>
             <div class="w-[270px] h-[230px] bg-[#f3fafa]  p-2 rounded-lg shadow-lg m-4 transition-transform  hover:scale-110 ">
               <h3 class="mb-[10px] mt-[10px] text-[#5e6769]"></h3> سایر متخصصین</h3>
               <hr class="border-b-2 border-[#cfe1e1] w-[54%]">
-              <img src="assets/img/hospital-hallway-with-motion-effect.jpg" class="mt-[25px]"></div>
+              <img src="assets/img/hospital-hallway-with-motion-effect.jpg" alt="متخصصین بیمارستان سینا"  class="mt-[25px]"></div>
           </div>
         </div>
       </div>
       <div class="p-2 w-full lg:hidden bg-[#b7c7c780]  bg-opacity-50 rounded-lg gap-4 h-[610px] flex flex-col my-[30px] shadow-xl ">
-        <p class="p-4 flex justify-center font-bold text-[20px] md:text-[23px] text-[#5e6769] "> اخرین اخبار</p>
+        <h2 class="p-4 flex justify-center font-bold text-[20px] md:text-[23px] text-[#5e6769] "> اخرین اخبار</h2>
         <div class="p-2 mx-12 mb-[4px] ">
           <div class="transition-transform  hover:scale-110 hover:text-[#6c8a8f] flex flex-row gap-2">
-            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" class="w-[14px] ">
+            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="روسای بیمارستان سینا"  class="w-[14px] ">
             <a class="  text-[17px]">روسای بیمارستان</a>
           </div>
         </div>
         <div class="p-2 mx-12 mb-[4px]">
           <div class="transition-transform  hover:scale-110 hover:text-[#6c8a8f] flex flex-row gap-2">
-            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" class="w-[14px] ">
+            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="حقوق بیماران"  class="w-[14px] ">
             <a class=" text-[17px]">منشور حقوق بیماران</a>
           </div>
         </div>
         <div class="p-2 mx-12 mb-[4px]">
           <div class="transition-transform  hover:scale-110 hover:text-[#6c8a8f] flex flex-row gap-2">
-            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" class="w-[14px] ">
+            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="قوانین بیمارستان سینا"  class="w-[14px] ">
             <a class=" text-[17px]">قوانین بیمارستان</a>
           </div>
         </div>
         <div class="p-2 mx-12 mb-[4px]">
           <div class="transition-transform  hover:scale-110 hover:text-[#6c8a8f] flex flex-row gap-2">
-            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" class="w-[14px] ">
+            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="افتخارات بیمارستان سینا"  class="w-[14px] ">
             <a class=" text-[17px]">افتخارات بیمارستان</a>
           </div>
         </div>
         <div class="p-2 mx-12 mb-[4px]">
           <div class="transition-transform  hover:scale-110 hover:text-[#6c8a8f] flex flex-row gap-2">
-            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" class="w-[14px] ">
+            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="معرفی بیمارستان سینا"  class="w-[14px] ">
             <a class=" text-[17px]">معرفی بیمارستان سینا</a>
           </div>
         </div>
         <div class="p-2 mx-12 mb-[4px]">
           <div class="transition-transform  hover:scale-110 hover:text-[#6c8a8f] flex flex-row gap-2">
-            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" class="w-[14px] ">
+            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="تاریخچه بیمارستان سینا"  class="w-[14px] ">
             <a class=" text-[17px]">تاریخچه بیمارستان سینا</a>
           </div>
         </div>
         <div class="p-2 mx-12 mb-[4px]">
           <div class="transition-transform  hover:scale-110 hover:text-[#6c8a8f] flex flex-row gap-2">
-            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" class="w-[14px] ">
+            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="رسالت و چشم انداز بیمارستان سینا"  class="w-[14px] ">
             <a class=" text-[17px]">رسالت و چشم انداز</a>
           </div>
         </div>
         <div class="p-2 mx-12 mb-[4px]">
           <div class="transition-transform  hover:scale-110 hover:text-[#6c8a8f] flex flex-row gap-2">
-            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" class="w-[14px] ">
+            <img src="assets/img/reshot-icon-arrow-chevron-right-WDGHUKQ634.svg" alt="درباره بیمارستان سینا"  class="w-[14px] ">
             <a class=" text-[17px]">درباره ما</a>
           </div>
         </div>
       </div>
       <div class=" lg:hidden w-full p-2 my-4  min-h-[282px] rounded-lg  bg-[#b7c7c780] shadow-xl ">
-        <p class="my-5 text-center text-[#5e6769] font-bold text-[20px]">دسترسی ها</p>
+        <h3 class="my-5 text-center text-[#5e6769] font-bold text-[20px]">دسترسی ها</h3>
         <div class="w-full  flex  flex-wrap gap-[1rem] min-h-[100px] md:gap-[1rem] mx-auto justify-center text-[20px] ">
           <div class="flex flex-col items-center w-[120px] transition-transform  hover:scale-110 rounded-xl shadow-lg p-2 gap-6 bg-[#e5edee]">
-            <span> فرودگاه</span>
-            <img src="assets/img/arrivals-svgrepo-com.svg" class="w-[54px]">
+            <h4> فرودگاه</h4>
+            <img src="assets/img/arrivals-svgrepo-com.svg" alt="دسترسی از فرودگاه به بیمارستان سینا"  class="w-[54px]">
           </div>
           <div class="flex flex-col items-center w-[110px]  transition-transform  hover:scale-110 rounded-xl shadow-lg p-2 gap-6 bg-[#e5edee]">
-            <span>  درون شهری</span>
-            <img src="assets/img/bus-svgrepo-com.svg" class="w-[54px]">
+            <h4>  درون شهری</h4>
+            <img src="assets/img/bus-svgrepo-com.svg" alt="دسترسی های درون شهری به بیمارستان سینا"  class="w-[54px]">
           </div>
           <div class="flex flex-col items-center w-[110px]  transition-transform  hover:scale-110 rounded-xl shadow-lg p-2 gap-6 bg-[#e5edee]">
-            <span>مترو</span>
-            <img src="assets/img/metro-svgrepo-com.svg" class="w-[54px]">
+            <h4>مترو</h4>
+            <img src="assets/img/metro-svgrepo-com.svg" alt="دسترسی مترو به بیمارستان سینا"  class="w-[54px]">
           </div>
           <div class="flex flex-col items-center w-[110px]  transition-transform  hover:scale-110 rounded-xl shadow-lg p-2 gap-6 bg-[#e5edee]">
-            <span> راه اهن</span>
-            <img src="assets/img/train-travel-svgrepo-com.svg" class="w-[54px]">
+            <h4> راه اهن</h4>
+            <img src="assets/img/train-travel-svgrepo-com.svg" alt="دسترسی راه اهن به بیمارستان سینا"  class="w-[54px]">
           </div>
           <div class="flex flex-col items-center w-[110px]  transition-transform  hover:scale-110 rounded-xl shadow-lg p-2 gap-6 bg-[#e5edee]">
-            <span> تاکسی</span>
-            <img src="assets/img/taxi-svgrepo-com.svg" class="w-[54px]">
+            <h4> تاکسی</h4>
+            <img src="assets/img/taxi-svgrepo-com.svg" alt="دسترسی با تاکسی به بیمارستان سینا"  class="w-[54px]">
           </div>
           <div class="flex flex-col items-center w-[110px]  transition-transform  hover:scale-110 rounded-xl shadow-lg p-2 gap-6 bg-[#e5edee]">
-            <span> ترمینال</span>
-            <img src="assets/img/bus2 -svgrepo-com.svg" class="w-[54px]">
+            <h4> ترمینال</h4>
+            <img src="assets/img/bus2 -svgrepo-com.svg" alt="دسترسی از ترمینال به بیمارستان سینا"  class="w-[54px]">
           </div>
         </div>
       </div>
     </div>
     <div class="">
-      <img src="assets/img/Polygon 4.svg" class="absolute  xl:top-[10px] top-[547px]  hidden xl:flex z-20 ">
-      <img src="assets/img/Polygon 3.svg" class="absolute  hidden bottom-[519px] xl:flex xl:top-[400px] z-40">
-      <img src="assets/img/Polygon 5.svg" class="absolute   hidden left-[0px] xl:flex xl:left-[0px] bottom-[0px] z-50 ">
+      <img src="assets/img/Polygon 4.svg" alt="تصویر پس ضمینه" class="absolute  xl:top-[10px] top-[547px]  hidden xl:flex z-20 ">
+      <img src="assets/img/Polygon 3.svg" alt="تصویر پس ضمینه"  class="absolute  hidden bottom-[519px] xl:flex xl:top-[400px] z-40">
+      <img src="assets/img/Polygon 5.svg" alt="تصویر پس ضمینه" class="absolute   hidden left-[0px] xl:flex xl:left-[0px] bottom-[0px] z-50 ">
     </div>
   </div>
   <footer class="flex lg:hidden bg-[#b7c7c780]  bg-opacity-50 rounded-lg  mt-[30px] text-black font-semibold shadow-xl py-4">
     <div class=" mx-auto text-center">
       <div class="flex justify-center gap-3.5 md:gap-9 mt-[30px] space-x-6 mb-[15px]">
         <a href="https://github.com" class="flex flex-col items-center">
-          <img src="assets/img/icons8-git-48.png" alt="github" class=" w-[35px]">
+          <img src="assets/img/icons8-git-48.png" alt="گیت هاب"  alt="github" class=" w-[35px]">
         </a>
         <a href=" https://instagram.com" class="flex flex-col items-center">
-          <img src="assets/img/icons8-instagram-48.png" alt="instagram" class=" w-[35px]">
+          <img src="assets/img/icons8-instagram-48.png" alt="اینستاگرام"  alt="instagram" class=" w-[35px]">
         </a>
         <a href=" https://twitter.com" class="flex flex-col items-center">
-          <img src="assets/img/icons8-twitter-48.png" alt="twitter" class=" w-[35px]">
+          <img src="assets/img/icons8-twitter-48.png" alt="توییتر" class=" w-[35px]">
         </a>
         <a href="https://telegram.org" class="flex flex-col items-center">
-          <img src="assets/img/icons8-telegram-48.png" alt="telegram" class=" w-[35px]">
+          <img src="assets/img/icons8-telegram-48.png" alt="تلگرام" class=" w-[35px]">
         </a>
       </div>
       <span class="p-2 ">ارتباط با ما  02143578665</span>
