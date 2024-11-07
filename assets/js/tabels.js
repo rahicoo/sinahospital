@@ -49,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
  
-    updateTableDisplay();
     
     window.addEventListener('resize', updateTableDisplay);
 });

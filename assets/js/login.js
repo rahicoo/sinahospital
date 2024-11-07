@@ -1,22 +1,35 @@
 var btn = document.getElementById("btn-login").addEventListener('click', function () {
 
     const currentpasslogin=document.getElementById("pass-login").value;
+    const currentnamelogin=document.getElementById("name-login").value;
 
-    var passwordInputlogin = document.getElementById("pass-login");
-    var repasswordInputlogin = document.getElementById("name-login");
+    const passwordInputlogin = document.getElementById("pass-login");
+    const nameinputlogin=document.getElementById("name-login");
+
 
     passwordInputlogin.classList.remove("border-red-500");
-    repasswordInputlogin.classList.remove("border-red-500");
+    nameinputlogin.classList.remove("border-red-500")
+    
+
+    if (currentpasslogin.trim() === ""){
+
+        passwordInputlogin.classList.add("border-red-500")
+    }else{
+        passwordInputlogin.classList.remove("border-red-500")
+    }
+
+    if (currentnamelogin.trim() === ""){
+
+        nameinputlogin.classList.add("border-red-500")
+    }else{
+        nameinputlogin.classList.remove("border-red-500")
+    }
 
 
 
 });
 
  
-// function validatePassword(password) {
-//     const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/; 
-//     return passwordPattern.test(password);
-// }
 
 function togglePasswordVisibility(inputId, imgHideId) {
     const input = document.getElementById(inputId);
