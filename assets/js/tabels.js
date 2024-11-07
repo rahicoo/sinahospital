@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     function cardsTableDashboard() {
-        const table = document.getElementById('tabel-dashboard');
+        const table = document.getElementById('table-dashboard');
         const cards = document.getElementById('cards-dashboard');
 
         if (table && cards) {
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function populateCardsFromTableDashboard() {
-        const table = document.getElementById('tabel-dashboard');
+        const table = document.getElementById('table-dashboard');
         const rows = table.querySelectorAll('tbody tr');
         const cardsContainer = document.getElementById('cards-dashboard');
 
