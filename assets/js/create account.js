@@ -43,7 +43,7 @@ var btn = document.getElementById("btn").addEventListener('click', function () {
     if (!emailPattern.test(currentmail)) {
         var mailInput = document.getElementById("mail");
         mailInput.classList.add("border-red-500");
-        hasError = true;
+      
     } else {
         mailInput.classList.remove("border-red-500");
     }
@@ -82,7 +82,13 @@ var btn = document.getElementById("btn").addEventListener('click', function () {
 });
 
 function isNumberKey(evt) {
-    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    var charCode;
+
+   if (evt.which) {
+    charCode = evt.which; 
+   } else {
+    charCode = evt.keyCode;  
+   }
     var input = evt.target.value;
 
     if (!((charCode >= 48 && charCode <= 57) || (charCode >= 1632 && charCode <= 1641))) {

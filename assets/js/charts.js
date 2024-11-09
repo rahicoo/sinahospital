@@ -1,6 +1,4 @@
 
-
-
 const ctx = document.getElementById('myChart1').getContext('2d');
 
 const visitedData = 50; 
@@ -113,8 +111,6 @@ new Chart(ctx, {
 
 const canvasline = document.getElementById('myLineChart');
 
-
-
 const ctx3 = canvasline.getContext('2d');
 const myLineChart = new Chart(ctx3, {
     type: 'line',
@@ -126,8 +122,8 @@ const myLineChart = new Chart(ctx3, {
             fill: false,
             borderColor: 'rgba(75, 192, 192, 1)',
             backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            borderWidth: 2,
-            pointBackgroundColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 3,
+            pointBackgroundColor: 'rgb(161 151 151)',
             pointBorderColor: '#fff',
             pointHoverBackgroundColor: '#fff',
             pointHoverBorderColor: 'rgba(75, 192, 192, 1)',
