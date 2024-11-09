@@ -18,7 +18,7 @@ new Chart(ctx, {
         datasets: [{
             data: [visitedData, notVisitedData],
             backgroundColor: ["#69BEC7", '#E0E0E0'],
-            borderWidth: 10,
+            borderWidth: 4,
             borderColor: [
                 '#69BEC7', 
                 '#ffffff'  
@@ -76,7 +76,7 @@ new Chart(ctx, {
           datasets: [{
               data: [visitedData, notVisitedData],
               backgroundColor: ["#69BEC7", '#E0E0E0'],
-              borderWidth: 10,
+              borderWidth: 4,
               borderColor: [
                 '#69BEC7', 
                 '#ffffff'  
@@ -136,7 +136,7 @@ const myLineChart = new Chart(ctx3, {
     },
     options: {
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio:false,
         plugins: {
             legend: {
                 display: false,
@@ -204,7 +204,7 @@ new Chart(ctx5, {
         datasets: [{
             data: [visitedData, notVisitedData],
             backgroundColor: ["#69BEC7", '#E0E0E0'],
-            borderWidth: 10,
+            borderWidth: 4,
             borderColor: [
                 '#69BEC7', 
                 '#ffffff'  
@@ -259,7 +259,7 @@ new Chart(ctx5, {
           datasets: [{
               data: [visitedData, notVisitedData],
               backgroundColor: ["#69BEC7", '#E0E0E0'],
-              borderWidth: 10,
+              borderWidth: 4,
               borderColor: [
                 '#69BEC7', 
                 '#ffffff'  
