@@ -1,6 +1,4 @@
 
-// dashboard-----------
-
 document.addEventListener('DOMContentLoaded', function() {
     function cardsTableDashboard() {
         const table = document.getElementById('table-dashboard');
@@ -44,10 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    window.addEventListener('resize', cardsTableDashboard);
+    cardsTableDashboard();
   
+    window.addEventListener('resize', cardsTableDashboard);
 });
-
 
 
 

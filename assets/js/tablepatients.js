@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const table = document.getElementById('org-table');
     const cards = document.getElementById('cards-table');
@@ -38,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
             detailButton.textContent = headers[0].textContent; 
             detailButton.classList.add('rounded-[16px]', 'bg-[#a2d1d3]', 'text-black', 'p-2', 'hover:bg-[#96c5c7]', 'w-[68px]', 'dark:text-white'); 
             detailButton.onclick = () => {
-               
+            
             };
             card.appendChild(detailButton); 
             cardsContainer.appendChild(card); 
         });
     }
 
- 
+    updateTableDisplay();
     
-    window.addEventListener('resize', updateTableDisplay);
+    window.addEventListener('resize', updateTableDisplay); 
 });
