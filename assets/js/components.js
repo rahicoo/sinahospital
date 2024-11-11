@@ -2,7 +2,6 @@
 function createMenuxl() {
  
     const menu = document.createElement('ul');
-    menu.id = "hospital-menu-xl";
     menu.className = "hidden xl:flex bg-[#69BEC7] xl:rounded-[50px] flex xl:flex-col xl:w-[116px] xl:h-[920px] xl:mt-[31px]";
     
  
@@ -64,7 +63,6 @@ function createMenuxl() {
 //Dr. information---
 function drInfo(){
     const drinfo = document.createElement("div");
-    drinfo.id="drinfo"
     drinfo.className=" w-full flex flex-row justify-between text-[#4F4F4F] ";
 
     const item1=document.createElement("div");
@@ -130,32 +128,57 @@ function drInfo(){
 };
 
 //menu sm screen
+
+function sinaMenuDashboard(){
+    const menudashboard=document.getElementById('hospital-menu-mobile');
+    menudashboard.classList.toggle('hidden');
+  }
+
+function sinaMenuPatiens() {
+    const menu = document.getElementById('hospital-menu-mobile');
+    menu.classList.toggle('hidden'); 
+  }
+
 function createMenusm(){
     const menuSM=document.createElement("ul");
-    menuSM.id="hospital-menu-mobile" 
-    menuSM.className=
+    menuSM.id="hospital-menu-mobile"
+    menuSM.className="flex flex-col justify-around  shadow-xl text-[20px] font-medium w-[100%] rounded-[20px]  z-50 absolute  bg-white top-[65px]  h-[440px] mb-[10px] items-center dark:bg-[#adb4b5]  bg-[url('assets/img/SL-040820-29750-27.jpg')] bg-cover"
 
+    const li1=document.createElement("li");
+    li1.className="mt-[30px] mr-[12px] transition-transform  hover:scale-110";
+    li1.innerHTML=`<a href="./dashboard.html" >داشبورد</a>`
+    menuSM.appendChild(li1)
+
+    const li2=document.createElement("li");
+    li2.className="mt-[30px] mr-[12px] transition-transform  hover:scale-110 ";
+    li2.innerHTML=`<a>بیماران</a>`;
+    menuSM.appendChild(li2);
+
+    const li3=document.createElement("li");
+    li3.className="mt-[30px] mr-[12px] transition-transform  hover:scale-110 ";
+    li3.innerHTML=`<button>اطلاعیه ها</button>`
+    menuSM.appendChild(li3);
+
+    const li4=document.createElement("li");
+    li4.className="mt-[30px] mr-[12px] transition-transform  hover:scale-110 ";
+    li4.innerHTML=`<button>تنظیمات</button>`
+    menuSM.appendChild(li4);
+
+    const li5=document.createElement("li");
+    li5.className="mt-[30px] mr-[12px] transition-transform  hover:scale-110 ";
+    li5.innerHTML=`<button>خروج</button>`
+    menuSM.appendChild(li5);
+
+    const li6=document.createElement("li");
+    li6.className="h-[41px] w-[78px] rounded-[25px] bg-[#FFFFFF] flex flex-row justify-between my-[30px] mr-[12px]";
+    li6.innerHTML=`<input data-hs-theme-switch="" type="checkbox" id="darkSwitch" class="relative w-[100px] h-[41px] border-2 bg-[#e9f6f8] shadow-xl checked:bg-gray-100 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 ring-1 ring-transparent focus:outline-none appearance-none
+          before:absolute before:w-[31px] before:h-[31px] before:bg-[url('assets/img/moon.svg')]
+          before:bg-cover  before:left-[3px] before:top-[4px] before:rounded-full before:transition-all before:duration-200 checked:before:opacity-0
+          after:absolute after:w-[31px] after:h-[31px] after:bg-[url('assets/img/sun-svgrepo-com.svg')]  after:bg-cover after:top-[4px] after:right-[3px] after:rounded-full after:transition-all after:duration-200 after:opacity-0 checked:after:opacity-100">`;
+          
+    menuSM.appendChild(li6);
+    
+    return menuSM;
+
+    
 };
-
-
-<ul id="hospital-menu-mobile" class="hidden flex flex-col justify-around  shadow-xl text-[20px] font-medium w-[100%] rounded-[20px]  z-50 absolute  bg-white top-[65px]  h-[440px] mb-[10px] items-center dark:bg-[#adb4b5]  bg-[url('assets/img/SL-040820-29750-27.jpg')] bg-cover ">
-                    <li class="mt-[30px] mr-[12px] transition-transform  hover:scale-110"><a href="./dashboard.html" >داشبورد</a></li>
-                    <li class="mt-[30px] mr-[12px] transition-transform  hover:scale-110 "><button>بیماران</button></li>
-                    <li class="mt-[30px] mr-[12px] transition-transform  hover:scale-110"><button>اطلاعیه ها</button></li>
-                    <li class="mt-[30px] mr-[12px] transition-transform  hover:scale-110"><button>تنظیمات</button></li>
-                    <li class="my-[30px] mr-[12px] transition-transform  hover:scale-110"><button>خروج</button></li> 
-                    <li class="h-[41px] w-[78px] rounded-[25px] bg-[#FFFFFF] flex flex-row justify-between my-[30px] mr-[12px]">
-                      <input data-hs-theme-switch="" type="checkbox" id="darkSwitch" class="relative w-[100px] h-[41px] border-2 bg-[#e9f6f8] shadow-xl checked:bg-gray-100 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 ring-1 ring-transparent focus:outline-none appearance-none
-                          before:absolute before:w-[31px] before:h-[31px] before:bg-[url('assets/img/moon.svg')]
-                          before:bg-cover  before:left-[3px] before:top-[4px] before:rounded-full before:transition-all before:duration-200 checked:before:opacity-0
-                          after:absolute after:w-[31px] after:h-[31px] after:bg-[url('assets/img/sun-svgrepo-com.svg')]  after:bg-cover after:top-[4px] after:right-[3px] after:rounded-full after:transition-all after:duration-200 after:opacity-0 checked:after:opacity-100">
-                    </li>
-                </ul>
-
-
-
-
-                {/* <li class=" h-[41px] w-[78px] rounded-[25px] bg-[#a2d1d3] flex flex-row justify-around my-[30px] mr-[12px] dark:bg-gray-900 ">
-                        <button class="disable-dark-mode-mobile" > <img src="assets/img/Vector (4).svg" class="w-[18px] rounded-[10px] hover:bg-[#dcf0f36b] transition-transform  hover:scale-110 "></button>
-                        <button  class="enable-dark-mode-mobile" > <img src="assets/img/moon.svg" class="w-[18px]  rounded-[10px] hover:bg-[#dcf0f36b] transition-transform  hover:scale-110"></button>
-                    </li>  */}
