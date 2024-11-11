@@ -1,12 +1,20 @@
 
+//xl screen---
+function initializeDarkMode() {
+    const enableDarkModeButton = document.querySelector('.enable-dark-mode');
+    const disableDarkModeButton = document.querySelector('.disable-dark-mode');
 
-document.querySelector('.enable-dark-mode').addEventListener('click', function() {
-    document.documentElement.classList.add('dark'); 
-});
+    if (enableDarkModeButton && disableDarkModeButton) {
+        enableDarkModeButton.addEventListener('click', function() {
+            document.documentElement.classList.add('dark');
+        });
 
-document.querySelector('.disable-dark-mode').addEventListener('click', function() {
-    document.documentElement.classList.remove('dark');
-});
+        disableDarkModeButton.addEventListener('click', function() {
+            document.documentElement.classList.remove('dark');
+        });
+    } 
+}
+
 
 //  mobile screen--------
 document.addEventListener('DOMContentLoaded', function () {

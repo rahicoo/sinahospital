@@ -37,42 +37,7 @@
             after:absolute after:w-[31px] after:h-[31px] before:bg-[url('assets/img/moon.svg')] after:bg-cover after:top-[4px] after:right-[3px] after:rounded-full after:transition-all after:duration-200 after:opacity-0 checked:after:opacity-100">
       </li>
         </ul>
-        <ul id="hospital-menu-xl" class="hidden xl:flex bg-[#69BEC7] xl:rounded-[50px] flex xl:flex-col xl:w-[116px] xl:max-h-[936px] xl:mt-[53px] ">
-          <li>  
-              <img src="assets/img/Ellipse 49.svg" alt="دکتر متخصص این بخش" class="  xl:w-[89px] xl:mt-[21px] xl:mr-[14px] xl:ml-[13px]">
-          </li>
-        
-          <li   class=" flex xl:flex-col xl:justify-center xl:items-center xl:w-[153px] xl:h-[150px] rounded-[100px] xl:bg-[#EBF6F8] xl:mr-[-22px] xl:mt-[17px] dark:bg-gray-900">
-              <img src="assets/img/logo-copy64.svg" alt="لوگوی بیمارستان سینا" class="xl:w-[108px] xl:mt-[38p]">
-              
-          </li>
-          <li class="item-menu xl:mt-[20px] xl:mb-[55px]">  <a  href="#" class="xl:w-[64px] xl:h-[30px] xl:mt-[35px] xl:mr-[25px] xl:ml-[28px] font-black text-white xl:text-[20px]">داشبورد</a>
-              <!-- <img src="assets/img/Group 34029.svg" class="icon hidden absolute right-[4px] top-[380px]"> -->
-          </li>
-          <li class="item-menu">
-                  <a href="./patients.html" class="xl:w-[51px] xl:h-[28px] xl:mt-[52px] xl:mr-[24px] xl:ml-[41px] font-black text-white xl:text-[18px]">بیماران</a>
-                  <!-- <img src="assets/img/Group 34029.svg" class="icon hidden absolute right-[4px] top-[463px]"> -->
-          </li>
-          <li class="item-menu">
-              <button class="xl:w-[77px] xl:h-[27px] xl:mt-[55px] xl:mr-[24px] font-black text-white xl:text-[18px]">اطلاعیه
-              ها</button>
-              <!-- <img src="assets/img/Group 34029.svg" class=" icon hidden absolute right-[4px] top-[545px]"> -->
-          </li>
-          <li class="item-menu">
-              <button class="xl:w-[63px] xl:h-[28px] xl:mt-[55px] xl:mr-[24px] xl:ml-[29px] font-black text-white xl:text-[18px]">تنظیمات</button>
-              <!-- <img src="assets/img/Group 34029.svg" class=" icon hidden absolute right-[4px] top-[630px]"> -->
-          </li>
-          <li class="item-menu">
-              <button class="xl:w-[41px] xl:h-[28px] xl:mt-[158px] xl:mr-[30px] xl:ml-[45px] font-black text-white xl:[18px]">خروج</button>
-              <!-- <img src="assets/img/Group 34029.svg" class=" icon hidden absolute right-[4px] top-[818px]"> -->
-          </li>
-          <li class=" xl:h-[41px] xl:w-[78px] xl:mt-[52px] xl:ml-[14px] xl:mr-[15px] xl:rounded-[25px] xl:bg-[#FFFFFF] xl:flex xl:flex-row xl:justify-between">
-             
-              <button class="disable-dark-mode" > <img src="assets/img/Vector (4).svg" alt="تصویر خورشید برای تنظیم لایت مود" class=" xl:mr-[8px]  rounded-full hover:bg-gray-500 transition-transform  hover:scale-110  "></button>
-              <button  class="enable-dark-mode" > <img src="assets/img/moon.svg" alt="تصویر ماه برای تنظیم دارک مود" class="xl:ml-[8px] rounded-full hover:bg-gray-300 transition-transform  hover:scale-110"></button>
-              
-          </li>
-      </ul>
+        <div id="menu-dashboard-xl"></div>
         <div class="xl:w-auto p-[17px]">
           <div class="">
             <div class="flex hidden xl:flex xl:flex-row-reverse mt-[27px] mb-[10px] "> 
@@ -317,8 +282,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
     <script src="assets/js/tabledashboard.js"></script>
+    <script src="assets/js/components.js"></script>
     <script src="assets/js/charts.js"></script>
     <script src="assets/js/alert.js"></script>
-    <script src="assets/js/darkmode.js"> </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', ()=>{
+        const menu = createMenuxl();
+        document.getElementById('menu-dashboard-xl').appendChild(menu);
+        initializeDarkMode()
+      });
+    </script>
+       <script src="assets/js/darkmode.js"> </script>
   </body>
 </html>
