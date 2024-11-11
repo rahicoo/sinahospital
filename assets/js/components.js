@@ -151,7 +151,7 @@ function createMenusm(){
 
     const li2=document.createElement("li");
     li2.className="mt-[30px] mr-[12px] transition-transform  hover:scale-110 ";
-    li2.innerHTML=`<a>بیماران</a>`;
+    li2.innerHTML=`<a href="./patients.html">بیماران</a>`;
     menuSM.appendChild(li2);
 
     const li3=document.createElement("li");
