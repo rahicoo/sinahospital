@@ -3,7 +3,7 @@ function createMenuxl() {
  
     const menu = document.createElement('ul');
     menu.id = "hospital-menu-xl";
-    menu.className = "hidden xl:flex bg-[#69BEC7] xl:rounded-[50px] flex xl:flex-col xl:w-[116px] xl:h-[936px] xl:mt-[53px]";
+    menu.className = "hidden xl:flex bg-[#69BEC7] xl:rounded-[50px] flex xl:flex-col xl:w-[116px] xl:h-[920px] xl:mt-[31px]";
     
  
     const li1 = document.createElement('li');
@@ -63,5 +63,99 @@ function createMenuxl() {
   
 //Dr. information---
 function drInfo(){
+    const drinfo = document.createElement("div");
+    drinfo.id="drinfo"
+    drinfo.className=" w-full flex flex-row justify-between text-[#4F4F4F] ";
 
-}
+    const item1=document.createElement("div");
+    item1.className="flex flex-row gap-[2px] md:gap-4 items-center dark:text-white"
+    item1.innerHTML=`<p class="  xl:mt-[px] xl:mr-[62px]  text-[15px] md:text-[20px] font-bold  ">دکتر ناصر مقدسی</p>
+   <div class="relative inline-block z-40 w-[30px] md:w-[43px] lg:w-[70px] ">
+    <div id="badge" class="absolute top-0 right-0 w-8 h-10 rounded-full border-white">
+        <span id="notification-count" class="absolute -top-2 -right-2 bg-[#BEE6EA] text-black text-[15px] rounded-full w-6 h-6 flex items-center justify-center">۳</span>
+    </div>
+    <img id="dropdownButton" src="assets/img/Group 34077.svg" alt="پیام ها" class="w-10 lg:w-[50px]  cursor-pointer">
+     
+    
+    <div id="dropdownContent" class="hidden absolute right-[-85px] mt-2 w-48 bg-white rounded-lg shadow-lg  overflow-y-auto max-h-[300px] w-[330px] px-4 dark:bg-[#adb4b5] dark:text-black ">
+        <ul class="p-2 dark:bg-[#adb4b5] w-[281px] ">
+            <li class="border-b p-2 flex flex-col transition-transform hover:scale-110 focus:scale-105">
+              <div class="flex flex-row mb-[20px]">
+                <img src="assets/img/Ellipse 49.svg" alt="تصویر ارسال کننده پیام" class="w-[30px] ">
+                <span class="mr-[10px]">احمد احمدی</span>
+              </div>
+              <div> 
+                <p  class="text-[12px]"> سلام من احمد احمدی هستم </p>
+              </div>
+            </li>
+            <li class="border-b p-2 flex flex-col transition-transform hover:scale-110 focus:scale-105">
+              <div class="flex flex-row mb-[20px]  ">
+                <img src="assets/img/Ellipse 49.svg" alt="تصویر ارسال کننده پیام" class="w-[30px]  ">
+                <span class="mr-[10px]">احمد احمدی</span>
+              </div>
+              <div >
+                <p  class="text-[12px]"> سلام من احمد احمدی هستم </p>
+              </div>
+            </li> <li class="border-b p-2 flex flex-col transition-transform hover:scale-110 focus:scale-105">
+              <div class="flex flex-row  mb-[20px]">
+                <img src="assets/img/Ellipse 49.svg" alt="تصویر ارسال کننده پیام" class="w-[30px] ">
+                <span class="mr-[10px]">احمد احمدی</span>
+              </div>
+              <div>
+                <p  class="text-[12px]"> سلام من احمد احمدی هستم </p>
+              </div>
+            </li> <li class="border-b p-2 flex flex-col transition-transform hover:scale-110 focus:scale-110">
+              <div class="flex flex-row mb-[20px]">
+                <img src="assets/img/Ellipse 49.svg" alt="تصویر ارسال کننده پیام" class="w-[30px]">
+                <span class="mr-[10px]">احمد احمدی</span>
+              </div>
+              <div>
+                <p  class="text-[12px]"> سلام من احمد احمدی هستم </p>
+              </div>
+            </li>
+        </ul>
+    </div>`
+    drinfo.appendChild(item1);
+
+    const item2= document.createElement("div");
+    item2.className="flex flex-row gap-[2px] md:gap-4 items-center ";
+    item2.innerHTML=` <p class="  font-bold  text-[15px] md:text-[20px] xl:font-bold dark:text-white ">شماره نظام پزشکی:</p>
+    <div  class=" bg-[#FFFFFF] rounded-[12px] w-[61px] h-[25px] md:h-[45px]  xl:mr-[52px] flex justify-center  md:w-[85px] lg:w-[108px] xl:h-[42px]">
+        <p class=" text-[15px] font-bold md:text-[25px] xl:font-medium dark:text-black">۹۷۰۴۰</p>
+    </div>`;
+    drinfo.appendChild(item2);
+
+    return drinfo;
+   
+};
+
+//menu sm screen
+function createMenusm(){
+    const menuSM=document.createElement("ul");
+    menuSM.id="hospital-menu-mobile" 
+    menuSM.className=
+
+};
+
+
+<ul id="hospital-menu-mobile" class="hidden flex flex-col justify-around  shadow-xl text-[20px] font-medium w-[100%] rounded-[20px]  z-50 absolute  bg-white top-[65px]  h-[440px] mb-[10px] items-center dark:bg-[#adb4b5]  bg-[url('assets/img/SL-040820-29750-27.jpg')] bg-cover ">
+                    <li class="mt-[30px] mr-[12px] transition-transform  hover:scale-110"><a href="./dashboard.html" >داشبورد</a></li>
+                    <li class="mt-[30px] mr-[12px] transition-transform  hover:scale-110 "><button>بیماران</button></li>
+                    <li class="mt-[30px] mr-[12px] transition-transform  hover:scale-110"><button>اطلاعیه ها</button></li>
+                    <li class="mt-[30px] mr-[12px] transition-transform  hover:scale-110"><button>تنظیمات</button></li>
+                    <li class="my-[30px] mr-[12px] transition-transform  hover:scale-110"><button>خروج</button></li> 
+                    <li class="h-[41px] w-[78px] rounded-[25px] bg-[#FFFFFF] flex flex-row justify-between my-[30px] mr-[12px]">
+                      <input data-hs-theme-switch="" type="checkbox" id="darkSwitch" class="relative w-[100px] h-[41px] border-2 bg-[#e9f6f8] shadow-xl checked:bg-gray-100 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 ring-1 ring-transparent focus:outline-none appearance-none
+                          before:absolute before:w-[31px] before:h-[31px] before:bg-[url('assets/img/moon.svg')]
+                          before:bg-cover  before:left-[3px] before:top-[4px] before:rounded-full before:transition-all before:duration-200 checked:before:opacity-0
+                          after:absolute after:w-[31px] after:h-[31px] after:bg-[url('assets/img/sun-svgrepo-com.svg')]  after:bg-cover after:top-[4px] after:right-[3px] after:rounded-full after:transition-all after:duration-200 after:opacity-0 checked:after:opacity-100">
+                    </li>
+                </ul>
+
+
+
+
+                {/* <li class=" h-[41px] w-[78px] rounded-[25px] bg-[#a2d1d3] flex flex-row justify-around my-[30px] mr-[12px] dark:bg-gray-900 ">
+                        <button class="disable-dark-mode-mobile" > <img src="assets/img/Vector (4).svg" class="w-[18px] rounded-[10px] hover:bg-[#dcf0f36b] transition-transform  hover:scale-110 "></button>
+                        <button  class="enable-dark-mode-mobile" > <img src="assets/img/moon.svg" class="w-[18px]  rounded-[10px] hover:bg-[#dcf0f36b] transition-transform  hover:scale-110"></button>
+                    </li>  */}
