@@ -75,7 +75,7 @@ function drInfo(){
     <img id="dropdownButton" src="assets/img/Group 34077.svg" alt="پیام ها" class="w-10 lg:w-[50px]  cursor-pointer">
      
     
-    <div id="dropdownContent" class="hidden absolute right-[-85px] mt-2 w-48 bg-white rounded-lg shadow-lg  overflow-y-auto max-h-[300px] w-[330px] px-4 dark:bg-[#adb4b5] dark:text-black ">
+    <div id="dropdownContent" class="hidden  absolute right-[-85px] mt-2 w-48 bg-white rounded-lg shadow-lg  overflow-y-auto max-h-[300px] w-[330px] px-4 dark:bg-[#adb4b5] dark:text-black ">
         <ul class="p-2 dark:bg-[#adb4b5] w-[281px] ">
             <li class="border-b p-2 flex flex-col transition-transform hover:scale-110 focus:scale-105">
               <div class="flex flex-row mb-[20px]">

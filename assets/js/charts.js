@@ -118,7 +118,7 @@ const myLineChart = new Chart(ctx3, {
         labels: ['شنبه', 'یکشنبه' ,'دوشنبه' ,'سه شنبه' ,'چهار شنبه' ,'پنج شنبه' ,'جمعه'],
         datasets: [{
             label: '',
-            data: [0, 10, 20, 30, 40, 50, 30, 40, 50],
+            data: [0, 10, 20, 30, 40, 50, 30],
             fill: false,
             borderColor: 'rgba(75, 192, 192, 1)',
             backgroundColor: 'rgba(75, 192, 192, 0.2)',
